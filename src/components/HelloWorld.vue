@@ -44,12 +44,12 @@
   </div>
 </template>
 
-<script setup>
+<script >
 export default {
   name: 'HelloWorld',
   data() {
     return {
-      msg: 'Hello Jest',
+      msg: 'hello,vue3',
     };
   },
 };

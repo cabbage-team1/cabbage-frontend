@@ -5,7 +5,8 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "lint": "eslint \"src/**/*.{js,vue}\""
+    "lint": "eslint \"src/**/*.{js,vue}\"",
+    "test": "jest --runInBand"
   },
   "dependencies": {
     "axios": "^0.24.0",
@@ -22,7 +23,7 @@
     "@typescript-eslint/parser": "^5.6.0",
     "@vitejs/plugin-vue": "^1.10.2",
     "@vue/test-utils": "^2.0.0-rc.17",
-    "babel-jest": "^27.4.2",
+    "babel-jest": "^26.3.0",
     "dart-sass": "^1.25.0",
     "eslint": "^8.4.1",
     "eslint-config-airbnb-base": "^15.0.0",
@@ -34,6 +35,8 @@
     "sass-loader": "^12.4.0",
     "ts-jest": "^27.1.1",
     "vite": "^2.7.0",
-    "vue-jest": "^3.0.7"
+    "jest": "^24.0.0",
+    "vue-jest": "^5.0.0-alpha.3",
+    "@babel/preset-env": "^7.10.4"
   }
 }

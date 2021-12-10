@@ -1,9 +1,12 @@
 module.exports = {
-    // 转义
+    testEnvironment: "jsdom",
     transform: {
-        '^.+\\.vue$': 'vue-jest',
-        '^.+\\js$': 'babel-jest',
-        "^.+\\.(t|j)sx?$": "ts-jest"
+        "^.+\\.vue$": "vue-jest",
+        "^.+\\js$": "babel-jest",
     },
-    moduleFileExtensions: ['vue', 'js', 'json', 'jsx', 'ts', 'tsx', 'node']
-}
+    moduleFileExtensions: ["vue", "js", "json", "jsx", "ts", "tsx", "node"],
+    testMatch: ["**/test/**/*.spec.js", "**/__test__/**/*.spec.js"],
+    moduleNameMapper: {
+        "^main(.*)$": "<rootDir>/src$1",
+    },
+};

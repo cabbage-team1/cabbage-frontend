@@ -3,6 +3,7 @@ module.exports = {
     root: true,
     env: {
         node: true,
+        jest:true,
     },
     // 插件名称可以省略 `eslint-plugin-` 前缀 引入eslint-plugin-prettier
     plugins: ['@typescript-eslint', 'prettier'],
